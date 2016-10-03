@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>[development mode]</title>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+	
+<header class="container-fluid">
+	<!-- functional panel in header -->
+	<div class="fuctional-panel row">
+		<div class="header_phone col-sm-4 col-sm-offset-3 col-xs-10 text-right">
+			<span class="header_phone-number">+7 (495) 507-79-98</span>
+			<span class="header_phone-order">заказать звонок</span>
+		</div>
+		<div class="nav_for-mobile visible-xs col-xs-2">
+			<button class="nav_for-mobile-btn">menu</button>
+		</div>
+
+		<ul class="header_nav-small">
+			<li><a href="#">Торты</a></li>
+			<li><a href="#">Начинки</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">О кондитерской</a></li>
+			<li><a href="#">Мастер-классы</a></li>
+			<li><a href="#">Заказ и оплата</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+
+		<div class="header_workingtime col-sm-3 hidden-xs text-left">
+			<span class="header_workingtime-time">10<sup>00</sup>:22<sup>00</sup></span>
+			<span class="header_workingtime-week">без выходных</span>
+		</div>
+		<div class="header_cart col-sm-1 hidden-xs text-center">
+			<span class="header_cartcount"></span>
+		</div>
+		<div class="header_search-btn col-sm-1 hidden-xs text-center">
+			
+		</div>
+	</div>
+	<!-- !functional panel in header -->
+
+	<!-- navigation -->
+	<nav class="header_nav row">
+		<ul class="col-lg-8 col-lg-offset-4 col-sm-6 col-sm-offset-6 hidden-xs">
+			<li><a href="#">Торты</a></li>
+			<li><a href="#">Начинки</a></li>
+			<li><a href="#">Акции</a></li>
+			<li><a href="#">О кондитерской</a></li>
+			<li><a href="#">Мастер-классы</a></li>
+			<li><a href="#">Заказ и оплата</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</nav>
+	<!-- !navigation -->
+
+	<div class="header_logo">
+		<img src="./assets/images/header_logo.png">
+	</div>
+	<span class="header_shoptitle">Эксклюзивные торты на заказ</span>
+	<div class="header_inviteimg">
+		<img src="./assets/images/header_inviteimg.png">
+	</div>
+
+	<div id="header_search-form" class="hidden">
+		<form class="" action="" method="post">
+			<input type="search" name="">
+		</form>
+	</div>
+
+</header>
+
+<section class="container-fluid delivery">
+<div class="row">
+	
+	<h1>Как заказать торт?</h1>
+	<div class="delivery_bullets col-xs-12 col-sm-4 text-center">
+		<img src="./assets/images/delivery_how-cart.png">
+		<span>Заказ на сайте</span>
+		<a href="#" class="delivery_how-cart">в каталог</a>
+	</div>
+	<div class="delivery_bullets col-xs-12 col-sm-4 text-center">
+		<img src="./assets/images/delivery_how-phone.png">
+		<span>Связаться по телефону</span>
+		<a href="tel:+74955077998" class="delivery_how-phone">+7 (495) 507-79-98</a>
+	</div>
+	<div class="delivery_bullets col-xs-12 col-sm-4 text-center">
+		<img src="./assets/images/delivery_how-email.png">
+		<span>Связаться по e-mail</span>
+		<a href="mailto:info@boutique-cakes.ru" class="delivery_how-email">info@boutique-cakes.ru</a>
+	</div>
+	
+	<div class="section_delivery-text col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+		<h2>После получения номера Вашего заказа, Вы можете произвести оплату любым удобным для Вас способом.</h2>
+		<ul>
+			<li>Наличный расчет в офисе, при оформлении заказа;</li>
+			<li>Наличный расчет с курьером, при получении заказа;</li>
+			<li>Безналичный расчет через любой банк, от физического лица;</li>
+			<li>Безналичный расчет, по счёту, выставленному на имя организации;</li>
+			<li>Расчет с использованием карт "Visa" и "MasterCard";</li>
+			<li>Расчет с использованием платежной системы "QIWI".</li>
+		</ul>
+	</div>
+</div>
+</section>
+
+<section class="catalog container-fluid">
+    	<div class="row">
+    		<nav class="nav_aside-menu col-sm-3 hidden-xs">
+    			<ul>
+    				<li>
+    					<a href="#" id="m-1" class="m">Свадебные</a>
+    					<ul class="nav_aside-menu-sub" id="sub-m-1">
+    						<li><a href="#">Свадебные торты без мастики</a></li>
+    						<li><a href="#">Свадебные торты с мастикой</a></li>
+    						<li><a href="#">Двухъярусный свадебный торт</a></li>
+    						<li><a href="#">Одноярусный торт</a></li>
+    						<li><a href="#">Элитные торты</a></li>
+    						<li><a href="#">Свадебные торты с цветами</a></li>
+    						<li><a href="#">Торты белого цвета</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#" id="m-2" class="m">Детские</a>
+    					<ul class="nav_aside-menu-sub" id="sub-m-2">
+    						
+    						<li><a href="#">Свадебные торты без мастики</a></li>
+    						<li><a href="#">Свадебные торты с мастикой</a></li>
+    						<li><a href="#">Двухъярусный свадебный торт</a></li>
+    						<li><a href="#">Одноярусный торт</a></li>
+    						<li><a href="#">Элитные торты</a></li>
+    						<li><a href="#">Свадебные торты с цветами</a></li>
+    						<li><a href="#">Торты белого цвета</a></li>
+    					</ul>
+    				</li>
+    				<li><a href="" id="">Корпоративные</a></li>
+    				<li><a href="" id="">Для женщин</a></li>
+    				<li><a href="" id="">Для мужчин</a></li>
+    				<li><a href="" id="">Праздничные</a></li>
+    				<li><a href="" id="">Без мастики</a></li>
+    				<li><a href="" id="">Начинки</a></li>
+    			</ul>    		
+	    	</nav>
+	    	<section class="sub-catalog col-sm-9">
+	    		<div class="sub-catalog_row row">
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    			</div>
+		    		</div>
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    				
+		    			</div>    			
+		    		</div>
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    				
+		    			</div>		
+		    		</div>
+	    		</div>
+	    		<div class="sub-catalog_row row">
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    				
+		    			</div>
+		    		</div>
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    				
+		    			</div>
+		    		</div>
+		    		<div class="price-card col-xs-12 col-sm-4">
+		    			<div class="price-card_base">
+		    				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
+		    				<span class="price-card_title">Торт "Свадебное путешествие"</span>
+		    				<span class="price-card_price">1 000 р</span>
+		    				<button class="price-card_btn" id=""><span>заказать</span></button>
+		    				
+		    			</div>
+		    		</div>
+	    		</div>
+	    	</section>
+    	</div>
+    </section>
+
+<footer>
+	
+</footer>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./assets/plugins/bootstrap.min.js"></script>
+
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./assets/plugins/scripts.js"></script>
+
+
+</body>
+</html>

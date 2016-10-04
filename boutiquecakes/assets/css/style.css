@@ -363,6 +363,19 @@ header {
 /* ================== !HEADER ================== */
 /* ============================================ */
 
+@media screen and (max-width: 767px) {
+	.offers {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1441px) {
+	.catalog,
+	.offers {
+		width: 1441px;
+		margin: 0 auto;
+	}
+}
 
 /* ================== SECTION ================== */
 /* ============================================ */
@@ -671,7 +684,7 @@ section h2 {
 
 @media screen and (min-width: 1602px) {
 	.sub-catalog_row .price-card:first-child .price-card_base {
-		margin-left: 20%;
+		/*margin-left: 20%;*/
 	}
 	.sub-catalog_row .price-card:last-child .price-card_base {
 		margin-right: 20%;
@@ -725,7 +738,7 @@ section h2 {
 	transition: all .6s ease;
 }
 .price-card:hover .price-card_base {
-	box-shadow: 0px 10px 30px rgba(218,184,102,.5); 
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2); 
 
 	transition: all .6s ease;
 }
@@ -914,11 +927,17 @@ section h2 {
 	padding-left: 0;
     padding-right: 0;
     transform: translateX(-10px);
+    background: url(../images/offers_image-3.jpg) no-repeat top left;
+    background-color: white;
+    background-size: 100%;
 }
 .offer-card-left {
 	padding-right: 0;
     padding-left: 0;
     transform: translateX(10px);
+    background: url(../images/offers_image-1.jpg) no-repeat top left;
+    background-color: white;
+    background-size: 100%;
 }
 @media screen and (min-width: 768px) {
 	.offer-card-left:after {
@@ -946,22 +965,29 @@ section h2 {
 	top: -30px;
 	z-index: 10;
 	height: 520px;
+	background: url(../images/offers_image-2.jpg) no-repeat top left;
+    background-color: white;
+    background-size: 100%;
+}
+.offer-card.offer-card-center h3 {
+	margin-top: 60%;
 }
 .offer-card h3 {
 	font-family: 'Neucha', 'Roboto', 'Helvetica', Arial, sans-serif;
 	width: 90%;
 	margin-bottom: 20px;
-	padding: 0 5%;
-	position: absolute;
-    top: 30%;
+	padding: 0 7%;
+	/*position: absolute;*/
+    /*bottom: 30%;*/
+    margin-top: 50%;
 }
 .offer-card p {
 	color: #140e00;
 	font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
 	width: 90%;
-	padding: 0 5%;
-	    position: absolute;
-    top: 50%;
+	padding: 0 7%;
+	    /*position: absolute;*/
+    /*bottom: 25%;*/
 }
 .offer-card img {
 	width: 100%;
@@ -1227,4 +1253,36 @@ footer {
 	color: black;
 	font-weight: 600;
 }
+/**/
+
+/**/
+
+.errorpage {
+	color: #6f2525;
+	font-size: 32px;
+	font-family: 'Neucha', 'Roboto', 'Helvetica', Arial, sans-serif;
+	/*transform: translateY(50%);*/
+	height: 100%;
+}
+.errorpage span span {
+	display: block;
+}
+
+@media screen and (max-width: 991px) {
+	.errorpage {
+		text-align: center;
+	}
+	.errorpage span span {
+		font-size: 160px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.errorpage {
+		text-align: right;
+	}
+	.errorpage span span {
+		font-size: 160px;
+	}	
+}
+
 /**/

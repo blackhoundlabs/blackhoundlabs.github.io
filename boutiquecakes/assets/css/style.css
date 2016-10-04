@@ -331,13 +331,15 @@ header {
 }
 
 #header_search-form {
-	width: 100%;
+	/*width: 100%;*/
+	width: 75%;
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    top: 50%;
-    bottom: 50%;
+    top: 25%;
+    margin: 0 auto;
+    /*bottom: 50%;*/
     z-index: 101;
 
     display: none;

@@ -23,7 +23,7 @@ $(document).ready(function () {
 		$(sub).toggleClass('visible');
 	});
 
-	$('body').on('click', '.nav_for-mobile-btn', function(event) {
+	$('body').on('click', '.nav_for-mobile', function(event) {
 		event.preventDefault();
 
 		$('.header_nav-small').toggleClass('visible');

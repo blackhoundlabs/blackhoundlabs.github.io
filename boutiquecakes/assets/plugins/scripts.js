@@ -27,7 +27,22 @@ $(document).ready(function () {
 		event.preventDefault();
 
 		$('.header_nav-small').toggleClass('visible');
+		$('.nav_for-mobile-btn').toggleClass('x-icon');
 		console.log(event);
 	});
+
+	$('body').on('click', '.nav_aside-menu-fixed', function(event) {
+		event.preventDefault();
+
+		$('.nav_aside-menu').toggleClass('visible');
+		$('.nav_aside-menu-fixed').toggleClass('hidden');
+	});
+
+	$('body').on('click', '.x-icon-submenu', function(event) {
+		event.preventDefault();
+
+		$('.nav_aside-menu').toggleClass('visible');
+		$('.nav_aside-menu-fixed').toggleClass('hidden');
+	});	
 
 });

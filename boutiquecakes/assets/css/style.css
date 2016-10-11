@@ -1064,7 +1064,7 @@ section h2
 
 .nav_aside-menu-sub
 {
-    display: none;
+    display: block;
 }
 
 .nav_aside-menu ul li .nav_aside-menu-sub li,

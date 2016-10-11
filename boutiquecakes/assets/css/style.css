@@ -204,6 +204,10 @@ body
     display: fixed !important;
 }
 
+.m0 {
+    margin: 0 auto;
+}
+
 /* ================== !HELPERS ================== */
 /* ============================================ */
 
@@ -1789,7 +1793,7 @@ footer
     .footer_payment ul
     {
         margin: 10px 0 0 0;
-        padding: 0;
+        padding: 10px 0 0 0;
 
         list-style: none;
 
@@ -2068,4 +2072,31 @@ footer
     }
 }
 
+.breadcrumbs {
+    left: 85px;
+        position: absolute;
+    color: #6f2525;
+    bottom: 0;    
+    text-align: center;
+}
+.breadcrumbs a {
+    color: #6f2525;
+    text-decoration: none;
+    font-weight: 500;
+}
 /**/
+
+.subcatalog-page_item {
+    list-style: none;
+}
+.subcatalog-page_item li {
+    margin: 20px 0;
+}
+.subcatalog-page_item li a {
+    font-family: 'Neucha', 'Roboto', 'Helvetica', Arial, sans-serif;
+    padding: 0 0 0 30px;
+    text-decoration: none;
+    color: #b09146;
+    font-size: 24px;
+    background: url(../images/nav_aside-menu-icon.png) no-repeat center left;
+}

@@ -20,7 +20,7 @@ $(document).ready(function () {
 
 		var thisid = $(this).attr('id');
 		var sub = '#sub-' + thisid;
-		$(sub).toggleClass('hidden');
+		$(sub).toggleClass('visible');
 	});
 
 	$('body').on('click', '.nav_for-mobile', function(event) {

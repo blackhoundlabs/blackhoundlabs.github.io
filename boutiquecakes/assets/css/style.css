@@ -1882,6 +1882,7 @@ footer
     {
         width: 70%;
         margin: 0 auto;
+            padding: 10px 0 0 0;
     }
     .footer_nav ul li
     {

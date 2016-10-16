@@ -79,7 +79,7 @@
 
 	<div id="header_search-form" class="hidden">
 		<form class="" action="" method="post">
-			<input type="search" name="">
+			<input type="search" name="" placeholder="Поиск">
 		</form>
 	</div>
 
@@ -95,8 +95,8 @@
 	<h1>Ваша корзина</h1>
 	
 
-	<div class="sub-catalog_row row">
-		<div class="price-card col-xs-12 col-sm-4">
+	<div class="sub-catalog_row">
+		<!-- <div class="price-card col-xs-12 col-sm-4">
 			<div class="price-card_base m0">
 				<img src="./assets/images/price-card_image.png" class="price-card_base-img" alt="">
 				<span class="price-card_title">Торт "Свадебное путешествие"</span>
@@ -109,9 +109,10 @@
 				<span class="price-card_title">Торт "Свадебное путешествие"</span>
 				<span class="price-card_price">1 000 р</span>
 			</div>    			
-		</div>
+		</div> -->
+			<span class="cart-empty">Ваша корзина пуста</span>
 	</div>
-	<button class="order-btn" id="" href="/boutiquecakes/404"><span>оформить</span></button>
+	<!-- <button class="order-btn" id="" href="/boutiquecakes/404"><span>оформить</span></button> -->
 
 </div>
 </section>
@@ -160,6 +161,14 @@
 		</div>	
 	</div>
 </footer>
+<div class="call-order">
+	<form action="" method="get">
+		<input type="text" name="" value="Ваше имя">
+		<input type="phone" name="" value="Номер телефона">
+		<input type="submit" name="" value="Заказать звонок">
+	</form>
+</div>
+<div class="overflow"></div>
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

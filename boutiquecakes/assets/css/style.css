@@ -1354,7 +1354,7 @@ section h2
     }
     .product-page_good-btn span
     {
-        bottom: -30px;
+        /*bottom: -30px;*/
     }
 }
 
@@ -1370,7 +1370,7 @@ section h2
     .price-card_btn span,
     .product-page_good-btn span
     {
-        top: 13px;
+        /*top: 13px;*/
     }
 }
 
@@ -1386,7 +1386,7 @@ section h2
     .price-card_btn span
     .product-page_good-btn span
     {
-        top: -30px;
+        /*top: -30px;*/
     }
 }
 @media screen and (width: 320px)
@@ -1402,7 +1402,7 @@ section h2
     .product-page_good-btn span,
     .price-card_btn span
     {
-        top: -23px;
+        /*top: -23px;*/
     }
 }
 
@@ -1430,6 +1430,36 @@ section h2
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.order-btn {
+ font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    font-weight: 500;
+
+    z-index: 3;
+
+    display: block;
+
+    width: 100%;
+    max-width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    position: relative;
+    color: #a87712;
+    border: 0 none;
+    outline: none;
+    background-color: transparent;
+    background-image: url('../images/price-card_btn.png');
+    background-repeat: no-repeat;
+    background-position: center center;   
+}
+.order-btn span {
+        bottom: -25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
 .price-card_btn
 {
     right: 0;
@@ -1438,8 +1468,9 @@ section h2
 }
 .product-page_good-btn
 {
-    top: 300px;
-    left: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .price-card_btn span,
 .product-page_good-btn span
@@ -1447,6 +1478,7 @@ section h2
     position: absolute;
     right: 0;
     left: 0;
+    bottom: -20px;
 
     display: inline-block;
 

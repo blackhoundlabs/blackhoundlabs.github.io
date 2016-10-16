@@ -207,6 +207,16 @@ body
 .m0 {
     margin: 0 auto;
 }
+.overflow {
+    z-index: 100;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
 /* ================== !HELPERS ================== */
 /* ============================================ */
@@ -1188,7 +1198,8 @@ section h2
 
 .sub-catalog_row
 {
-    /*margin: 120px 0;*/
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 .sub-catalog_row:first-child
 {
@@ -1214,6 +1225,9 @@ section h2
     min-height: 380px;
 
     text-align: center;
+}
+.price-card a {
+    text-decoration: none;
 }
 @media screen and (width: 768px)
 {
@@ -2133,4 +2147,45 @@ footer
     color: #b09146;
     font-size: 24px;
     background: url(../images/nav_aside-menu-icon.png) no-repeat center left;
+}
+
+.cart-empty {
+        width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.call-order {
+    position: absolute;
+    width: 90%;
+    display: none;
+    text-align: center;
+    max-width: 500px;
+    background-color: #8dccdb;
+    top: 200px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 30px 50px;
+    box-shadow: 0 10px 30px black;
+    z-index: 1100;
+}
+
+.call-order input {
+    display: block;
+    border: 1px solid #4694a7;
+    margin: 0 auto;
+    height: 40px;
+    padding: 5px 20px;
+    color: gray;
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.call-order input[type='submit'] {
+        border: none;
+    background-color: #054f62;
+    font-weight: 600;
+    color: white;
 }

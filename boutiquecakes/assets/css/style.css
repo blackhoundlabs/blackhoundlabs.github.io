@@ -1309,10 +1309,10 @@ section h2
     right: 0;
     left: 0;
 
-    display: inline-block;
+    display: inline-block !important;
 
     width: 100%;
-    max-width: 233px;
+    max-width: 233px !important;
     margin: 0 auto;
 }
 @media screen and (min-width: 991px)
@@ -1342,10 +1342,12 @@ section h2
     .price-card_title
     {
         font-size: 30px;
+        text-align: center;
     }
     .price-card_price
     {
         font-size: 36px;
+        text-align: center;
     }
 }
 .price-card_title

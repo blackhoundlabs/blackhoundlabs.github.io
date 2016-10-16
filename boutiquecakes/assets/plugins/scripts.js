@@ -45,4 +45,13 @@ $(document).ready(function () {
 		$('.nav_aside-menu-fixed').toggleClass('hidden');
 	});	
 
+	$('body').on('click', '.header_phone-order', function() {
+		$('.call-order').toggleClass('visible');
+		$('.overflow').toggleClass('visible');
+	});
+
+	$('body').on('click', '.overflow', function() {
+		$('.call-order').removeClass('visible');
+		$('.overflow').removeClass('visible');
+	});
 });

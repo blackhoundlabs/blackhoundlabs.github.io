@@ -2191,3 +2191,34 @@ footer
     font-weight: 600;
     color: white;
 }
+
+.index-form {
+        background: url(../images/index-form_back.jpg) no-repeat;
+    height: 496px;
+    background-size: cover;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+.index-form input {
+        height: 50px;
+        padding: 0 20px;
+    max-width: 400px;
+    border: 2px solid #c6a663;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+    color: #8a8a8a;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.index-form input[type='submit'] {
+    background-color: #efd8a8;
+    color: #6f2525;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 2px 10px #6c521d;
+    -webkit-box-shadow: 0 2px 10px #6c521d;
+    border: 0 none;
+}

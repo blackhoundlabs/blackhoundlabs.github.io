@@ -54,4 +54,12 @@ $(document).ready(function () {
 		$('.call-order').removeClass('visible');
 		$('.overflow').removeClass('visible');
 	});
+
+
+	// slider
+
+	$('.bxslider').bxSlider({
+		slideWidth: 0
+	});
+
 });

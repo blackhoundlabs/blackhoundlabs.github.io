@@ -657,6 +657,9 @@ header
     border-radius: 20px;
     outline: none;
     background-color: #dfeff3;
+
+        box-shadow: 0 10px 40px;
+
 }
 /* ================== !HEADER ================== */
 /* ============================================ */
@@ -1021,6 +1024,9 @@ section h2
 .nav_aside-menu ul li
 {
     margin: 20px 0 20px 20px;
+}
+.nav_aside-menu ul li a.active {
+    color: #e1c990;
 }
 
 .nav_aside-menu ul li a

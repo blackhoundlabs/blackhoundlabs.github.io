@@ -311,7 +311,7 @@ header
         bottom: 5%;
         left: 0;
 
-        width: 50%;
+        width: 40%;
         height: auto;
         margin: 0 auto;
     }
@@ -322,9 +322,9 @@ header
     {
         right: 10%;
         bottom: 0;
-        /*max-width: 470px;*/
+        max-width: 470px;
 
-        width: 50%;
+        width: 40%;
 
         -webkit-transform: translateX(10%);
                 transform: translateX(10%);
@@ -364,12 +364,13 @@ header
 {
     .header_shoptitle
     {
-        top: 50%;
+        top: 40%;
         right: 0;
         left: 0;
 
         width: 100%;
         padding: 0 10%;
+        margin: 0 auto;
     }
 }
 
@@ -380,11 +381,12 @@ header
         right: 0;
         left: 0;
 
-        width: 100%;
+        width: 80%;
 
         transform: translateY(15%);
         text-align: center;
         /*padding: 0 10%;*/
+        margin: 0 auto;
     }
 }
 @media screen and (min-width: 540px)

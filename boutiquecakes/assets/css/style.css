@@ -189,6 +189,13 @@ body
 /* ================== HELPERS ================== */
 /* ============================================ */
 
+.easing {
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
 .hidden
 {
     display: none !important;
@@ -197,6 +204,10 @@ body
 .visible
 {
     display: block !important;
+}
+.visible-swipe {
+    transform: translateX(0%) !important;
+    transition: all .3s ease;
 }
 
 .fixed
@@ -264,12 +275,12 @@ header
 
         width: 100%;
         margin: 0 auto;
-        padding: 0 30%;
+        padding: 0 10%;
 
         text-align: center;
     }
 }
-@media screen and (min-width: 991px)
+@media screen and (min-width: 992px)
 {
     .header_shoptitle
     {
@@ -296,7 +307,7 @@ header
         bottom: 5%;
         left: 0;
 
-        max-width: 70%;
+        max-width: 80%;
         margin: 0 auto;
         padding: 0 10%;
 
@@ -322,7 +333,7 @@ header
     {
         right: 10%;
         bottom: 0;
-        max-width: 470px;
+        /*max-width: 470px;*/
 
         width: 40%;
 
@@ -490,7 +501,9 @@ header
     top: 0;
     right: 0;
 
-    display: none;
+    display: block;
+    transform: translateX(100%);
+    transition: all .3s ease;
 
     width: 90%;
     height: 100%;

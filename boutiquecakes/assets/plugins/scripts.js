@@ -50,8 +50,14 @@ $(document).ready(function () {
 		$('.overflow').toggleClass('visible');
 	});
 
+	$('body').on('click', '.product-page_good-btn', function() {
+		$('.product-order').toggleClass('visible');
+		$('.overflow').toggleClass('visible');
+	});
+
 	$('body').on('click', '.overflow', function() {
 		$('.call-order').removeClass('visible');
+		$('.product-order').removeClass('visible');
 		$('.overflow').removeClass('visible');
 	});
 

@@ -2186,7 +2186,7 @@ footer
     text-align: center;
 }
 
-.call-order {
+.call-order, .product-order {
     position: absolute;
     width: 90%;
     display: none;
@@ -2202,7 +2202,7 @@ footer
     z-index: 1100;
 }
 
-.call-order input {
+.call-order input, .product-order input, .product-order select, .product-order textarea {
     display: block;
     border: 1px solid #4694a7;
     margin: 0 auto;
@@ -2214,11 +2214,24 @@ footer
     margin-bottom: 20px;
 }
 
-.call-order input[type='submit'] {
+.call-order input[type='submit'], .product-order input[type='submit'] {
         border: none;
     background-color: #054f62;
     font-weight: 600;
     color: white;
+}
+
+.product-order span {
+    font-family: 'Neucha', 'Roboto', 'Helvetica', Arial, sans-serif;
+
+    margin: 0 auto 40px;
+    padding: 0;
+    display: block;
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #054f62;
 }
 
 .index-form {

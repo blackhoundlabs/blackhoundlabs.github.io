@@ -12,7 +12,7 @@ body
     font-size: 16px;
     line-height: 1.2;
 
-    position: relative;
+    /*position: relative;*/
 
     min-width: 320px;
 
@@ -221,7 +221,7 @@ body
 .overflow {
     z-index: 100;
     background-color: rgba(0,0,0,.4);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1271,7 +1271,7 @@ section h2
 {
     .price-card_base
     {
-        height: 370px;
+        /*height: 370px;*/
         margin-bottom: 140px;
         padding: 170px 0 0 0;
     }
@@ -1296,7 +1296,7 @@ section h2
 {
     .price-card_base
     {
-        height: 370px;
+        /*height: 370px;*/
         margin: 80px auto 80px auto;
         padding: 170px 0 0 0;
     }
@@ -1307,6 +1307,7 @@ section h2
 
     width: 100%;
     max-width: 300px;
+    min-height: 370px;
 
     transition: all .6s ease;
 
@@ -1331,6 +1332,19 @@ section h2
     max-width: 233px !important;
     margin: 0 auto;
 }
+
+.price-card_weight {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.price-card_fill {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
 @media screen and (min-width: 991px)
 {
     .price-card_title
@@ -1381,6 +1395,7 @@ section h2
     font-weight: 400;
 
     display: block;
+    padding-bottom: 15px;
 
     color: black;
 }
@@ -2193,7 +2208,7 @@ footer
     text-align: center;
     max-width: 500px;
     background-color: #8dccdb;
-    top: 200px;
+    top: 15%;
     right: 0;
     left: 0;
     margin: 0 auto;

@@ -23,6 +23,10 @@ body
     -webkit-text-size-adjust: none;
 }
 
+a:hover, a:focus {
+    text-decoration: none;
+}
+
 .body_error-page
 {
     background: url(../images/404_back.jpg) no-repeat;
@@ -219,7 +223,7 @@ body
     margin: 0 auto;
 }
 .overflow {
-    z-index: 100;
+    z-index: 200;
     background-color: rgba(0,0,0,.4);
     position: fixed;
     top: 0;
@@ -725,6 +729,13 @@ header
 .main-catalog_card img
 {
     width: 100%;
+    transition: all .2s ease;
+}
+
+.main-catalog_card img:hover, .main-catalog_card img:focus {
+    filter: saturate(2) drop-shadow(0 2px 5px rgba(0,0,0,0.4));
+    -webkit-filter: saturate(2) drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+    transition: all .2s ease;
 }
 
 /* ================== !MAIN CATALOG ================== */
@@ -1308,6 +1319,8 @@ section h2
     width: 100%;
     max-width: 300px;
     min-height: 370px;
+    text-align: center;
+
 
     transition: all .6s ease;
 
@@ -2268,14 +2281,57 @@ footer
     font-size: 22px;
     font-weight: 300;
 }
+.index-form input:focus {
+    outline: none;
+}
 
-.index-form input[type='submit'] {
+.index-form input[type='submit'], .index-form input[type='submit']:visited {
     background-color: #efd8a8;
     color: #6f2525;
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 600;
-    box-shadow: 0 2px 10px #6c521d;
-    -webkit-box-shadow: 0 2px 10px #6c521d;
+    box-shadow: 0 2px 10px rgba(108, 82, 29, .8);
+    -webkit-box-shadow: 0 2px 10px rgba(108, 82, 29, .8);
     border: 0 none;
+    transition: all .2s ease;
 }
+
+.index-form input[type='submit']:active {
+    box-shadow: 0 2px 4px rgba(108, 82, 29, .8);
+    -webkit-box-shadow: 0 2px 4px rgba(108, 82, 29, .8);
+    transition: all .2s ease;
+}
+
+.index-form input[type='submit']:focus, .index-form input[type='submit']:hover {
+    box-shadow: 0 8px 24px rgba(108, 82, 29, .8);
+    -webkit-box-shadow: 0 8px 24px rgba(108, 82, 29, .8);
+    transition: all .2s ease;
+}
+
+span.header_cartcount {
+    color: #054f62;
+    display: block;
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #054f62;
+    border: 2px solid;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+
+.product-order span.x-close, .call-order span.x-close {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    transform: rotate(45deg);
+    top: 5px;
+    cursor: pointer;
+}
+

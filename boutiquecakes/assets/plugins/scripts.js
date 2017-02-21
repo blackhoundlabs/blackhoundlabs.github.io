@@ -62,6 +62,12 @@ $(document).ready(function () {
 		$('.overflow').removeClass('visible');
 	});
 
+	$('body').on('click', '.x-close', function() {
+		$('.call-order').removeClass('visible');
+		$('.product-order').removeClass('visible');
+		$('.overflow').removeClass('visible');
+	});
+
 
 	// slider
 

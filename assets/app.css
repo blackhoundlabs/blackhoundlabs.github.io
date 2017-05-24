@@ -603,3 +603,15 @@ body {
     overflow: auto;
     width: 100%;
 }
+
+
+
+/* unsorted */
+h3.unsorted {
+	width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 2rem;
+}

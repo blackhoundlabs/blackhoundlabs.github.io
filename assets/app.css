@@ -402,7 +402,7 @@ body {
 .item-wrapper:hover {
 	/*box-shadow: 0 25px 25px rgba(77,105,133,.16);*/
 	box-shadow: 0 25px 25px rgba(37, 51, 65, 0.16);
-	
+
     transform: translateY(-12px);
 }
 
@@ -472,10 +472,12 @@ body {
 		.header {
 			width: 100%;
 			margin-bottom: 2rem;
-			border-bottom: .25rem #c9c9c9 solid;
+			/*border-bottom: .25rem #c9c9c9 solid;*/
 			background-repeat: no-repeat;
 			background-size: cover;
 			position: relative;
+
+			box-shadow: 0 15px 15px hsla(200, 20%, 20%, 0.24);
 		}
 			
 			.social ul li a {

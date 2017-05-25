@@ -18,6 +18,10 @@ body {
 	overflow: auto;
 }
 
+.animate {
+	transition: all .3s ease;
+}
+
 /* mediaqueries for small screens */
 
 	@media only screen and (max-width: 400px) {
@@ -388,6 +392,20 @@ body {
 
 /* for x-large styles, more then 1600px */
 
+.item-wrapper {
+	/*box-shadow: 0 15px 15px rgba(77,105,133,.08);*/
+	box-shadow: 0 15px 15px rgba(37, 51, 65, 0.1);
+
+    transform: translateY(0);
+}
+
+.item-wrapper:hover {
+	/*box-shadow: 0 25px 25px rgba(77,105,133,.16);*/
+	box-shadow: 0 25px 25px rgba(37, 51, 65, 0.16);
+	
+    transform: translateY(-12px);
+}
+
 @media only screen and (max-width: 1599px) {
 	.content ul.items-list {
 		padding: 0;
@@ -401,7 +419,7 @@ body {
 		width: 100%;
 		max-width: 15.625rem;
 		height: auto;
-		border-bottom: .25rem solid #c9c9c9;
+		/*border-bottom: .25rem solid #c9c9c9;*/
 		background-color: white;
 		margin: 0 auto;
 		position: relative;
@@ -449,7 +467,7 @@ body {
 			margin: 0;
 			padding: 0;
 			width: 100%;
-			background: #ebebeb;
+			background: #fcfcfc;
 		}
 		.header {
 			width: 100%;
@@ -507,12 +525,16 @@ body {
 					font-size: 12px;
 					line-height: 12px;
 					font-weight: 300;
-					color: #9e9e9e;
+					/*color: #9e9e9e;*/
+					color: #808080;
 					text-align: left;
-					margin: .4rem .4rem .4rem 4rem;
+					/*margin: .4rem .4rem .4rem 4rem;*/
+					padding: 0.6rem .4rem 0.5rem 4rem;
+    				margin: 0;
 				}
 				.item-wrapper .h2-gif {
-					margin-left: 5rem;
+					/*margin-left: 5rem;*/
+					padding-left: 5rem;
 				}
 				.item-wrapper img {
 					width: 100%;
@@ -587,6 +609,7 @@ body {
     /*height: 1500px;*/
     min-height: 95%;
     overflow: visible;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.6);
 }
 .overlay:before {
     content: ' ';
@@ -610,8 +633,21 @@ body {
 h3.unsorted {
 	width: 80%;
     margin: 0 auto;
+    position: relative;
     display: block;
     padding-bottom: 0.3rem;
     border-bottom: 1px solid #AAA;
     margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+h3.unsorted:before {
+	content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(./images/icon--in-progress.png) no-repeat;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-size: cover;
 }

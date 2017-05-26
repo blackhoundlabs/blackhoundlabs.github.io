@@ -28,6 +28,12 @@
 		text-align: right;
 		margin: 3rem 2rem .8rem 6rem;
 	}
+	
+	.workContainer h2 {
+		font-size: .875rem;
+		font-weight: 400;
+		margin: 1rem 0 .5rem 2rem;
+	}
 	.workContainer q	 {
 		font-size: .875rem;
 		font-weight: 400;
@@ -388,15 +394,6 @@
     	/*margin: 0 0 0 10rem;*/
     	color: #ffa836;
     	word-wrap: break-word;
-	}
-	.workContainer h2 {
-		/*font-size: .875rem;
-    	font-weight: 400;
-    	margin: 0 0 .5rem 4rem;*/
-	}
-	.workContainer article {
-		/*position: relative;*/
-		/*margin: 0 2rem;*/
 	}
 	.workContainer .label {
 		position: absolute;

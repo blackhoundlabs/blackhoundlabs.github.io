@@ -505,6 +505,13 @@ body {
 				.social .behance {
 					background-position: -124px 0;
 				}
+				.social .headhunter {
+					background-image: url('./images/headhunter.png');
+					background-repeat: no-repeat;
+					width: 25px;
+				    height: 25px;
+				    background-position: 0 0;
+				}
 
 		.content {
 

@@ -15,6 +15,55 @@
 
         <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
+        <!-- map -->
+          <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+          <script type="text/javascript">
+              ymaps.ready(init);
+              var myPlacemark_mainoffice;
+              var myPlacemark_piter;
+              var myPlacemark_moskva;
+
+              function init(){ 
+                  mainoffice = new ymaps.Map("mainoffice", {
+                      center: [59.990053, 30.306939],
+                      zoom: 13
+                  }); 
+                  
+                  myPlacemark_mainoffice = new ymaps.Placemark([59.990053, 30.306939], {
+                      hintContent: 'Санкт-Петербург, Главный офис',
+                      balloonContent: 'OOO Название; 197342, г. Санкт-Петербург, ул. Новосибирская, д.6, лит А'
+                  });
+                  
+                  mainoffice.geoObjects.add(myPlacemark_mainoffice);
+
+                  piter = new ymaps.Map("piter", {
+                      center: [59.794188, 30.554173],
+                      zoom: 16
+                  }); 
+                  
+                  myPlacemark_piter = new ymaps.Placemark([59.794188, 30.554173], {
+                      hintContent: 'Санкт-Петербург, Склад',
+                      balloonContent: 'OOO Название; 196641, Санкт-Петербург, дор. на Металлострой, д.5'
+                  });
+                  
+                  piter.geoObjects.add(myPlacemark_piter);
+
+                  moskva = new ymaps.Map("moskva", {
+                      center: [55.726021, 37.730401],
+                      zoom: 16
+                  }); 
+                  
+                  myPlacemark_moskva = new ymaps.Placemark([55.726021, 37.730401], {
+                      hintContent: 'Москва, Склад',
+                      balloonContent: 'OOO Название; 109518, Москва, Рязанский пр. 2, с.64'
+                  });
+                  
+                  moskva.geoObjects.add(myPlacemark_moskva);
+              };
+
+          </script>
+          <!-- !map -->
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -50,48 +99,62 @@
                                 <p>Так же компания Пальмира Инжиниринг занимается поставками кабельно-проводниковой продукции на протяжении 6 лет. За это время мы накопили значительный опыт, благодаря которому можем предлагать клиентам не только качественный кабель, но и квалифицированную помощь, сервисное обслуживание, информационную поддержку и оперативное решение поставленных задач. Мы имеем эксклюзивные договора с крупнейшими поставщиками кабельно-проводниковой продукции, такими как: АО «Завод «Энергокабель», АО «Кабельный завод «Кавказкабель»ООО «Камский кабель», ООО «ГК «Севкабель», ЗАО «Завод Москабель», ОАО «Электрокабель» Кольчугинский завод», ООО «ХКА», ООО"Сарансккабель".Наличие на складах широкого ассортимента кабельно-проводниковой продукции позволяет Вам комплектовать крупные заказы у одного поставщика в максимально короткие сроки. Теплые отапливаемые складские помещения дают возможность производить отмотку кабеля в любую погоду. Поэтому на протяжении всего зимнего периода Вы можете постоянно обеспечивать себя необходимым количеством продукции.</p>
                             </div>
                     </header>
-                    <section class="section">
+                    <section class="section section-metall">
                         <h2>Металлопрокат</h2>
                         <ul>
-                            <li><a href="#"><div class="krug"></div><span>Круг</span></a></li>
-                            <li><a href="#"><div class="armatura"></div><span>Арматура</span></a></li>
-                            <li><a href="#"><div class="truba"></div><span>Труба</span></a></li>
-                            <li><a href="#"><div class="balka"></div><span>Балка</span></a></li>
-                            <li><a href="#"><div class="ugol"></div><span>Уголок</span></a></li>
-                            <li><a href="#"><div class="shveller"></div><span>Швеллер</span></a></li>
-                            <li><a href="#"><div class="setka"></div><span>Сетка кладочная</span></a></li>
-                            <li><a href="#"><div class="list"></div><span>Лист</span></a></li>
+                            <li><a href="#"><div class="krug"></div><span>Круг</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="armatura"></div><span>Арматура</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="truba"></div><span>Труба</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="balka"></div><span>Балка</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="ugol"></div><span>Уголок</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="shveller"></div><span>Швеллер</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="setka"></div><span>Сетка кладочная</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="list"></div><span>Лист</span><div class="a__circle-animate"></div></a></li>
                         </ul>
                     </section>
-                    <section class="section">
+                    <section class="section section-cable">
                         <h2>Кабельная продукция</h2>
                         <ul>
-                            <li><a href="#"><div class="sila"></div><span>Кабели силовые</span></a></li>
-                            <li><a href="#"><div class="control"></div><span>Кабели контрольные</span></a></li>
-                            <li><a href="#"><div class="poliet"></div><span>Кабели с изоляцией из сшитого полиэтилена</span></a></li>
-                            <li><a href="#"><div class="setup"></div><span>Провода установочные</span></a></li>
-                            <li><a href="#"><div class="notizo"></div><span>Провода неизолированные</span></a></li>
-                            <li><a href="#"><div class="air"></div><span>Провода для воздушных линий передач</span></a></li>
+                            <li><a href="#"><div class="sila"></div><span>Кабели силовые</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="control"></div><span>Кабели контрольные</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="poliet"></div><span>Кабели с изоляцией из сшитого полиэтилена</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="setup"></div><span>Провода установочные</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="notizo"></div><span>Провода неизолированные</span><div class="a__circle-animate"></div></a></li>
+                            <li><a href="#"><div class="air"></div><span>Провода для воздушных линий передач</span><div class="a__circle-animate"></div></a></li>
                         </ul>
                     </section>
-                    <section class="section">
+                    <section class="section section-map">
                         <h2>Контакты</h2>
                         <div class="container">
                             <div class="row">
                                 <div class="col-4">
                                     <h1>ООО «Название»</h1>
-                                    <span>тел.: <a href="tel:+78120000000">+7 (812) 000-00-00</a></span>
-                                    <span>e-mail: <a href="mailto:info@adres.ru">info@adres.com</a></span>
+                                    <span class="contact-address">тел.: <a href="tel:+78120000000">+7 (812) 000-00-00</a></span>
+                                    <span class="contact-address">e-mail: <a href="mailto:info@adres.ru">info@adres.com</a></span>
                                     <span class="contact-address">199000, г. Санкт-Петербург, ул. Улица, д.0</span>
-                                    <span>ИНН: 0000000000, КПП: 000000000</span>
-                                    <span>Р/сч: 00000000000000000000 </span>
-                                    <span>В филиале «Санкт-Петербургский» АО «БАНК»</span>
-                                    <span>К/сч: 00000000000000000000</span>
-                                    <span>БИК: 000000000</span>
-                                    <span>ОГРН: 0000000000000</span>
+                                    <span class="contact-address">ИНН: 0000000000, КПП: 000000000</span>
+                                    <span class="contact-address">Р/сч: 00000000000000000000 </span>
+                                    <span class="contact-address">В филиале «Санкт-Петербургский» АО «БАНК»</span>
+                                    <span class="contact-address">К/сч: 00000000000000000000</span>
+                                    <span class="contact-address">БИК: 000000000</span>
+                                    <span class="contact-address">ОГРН: 0000000000000</span>
                                 </div>
                                 <div class="col-8">
-                                    <img src="./img/kabel.jpg" alt="" style="width: 100%; height: auto;">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="office-contact active"><a href="#mainoffice" aria-controls="home" role="tab" data-toggle="tab">Главный офис</a></li>
+                                        <li role="presentation" class="piter-contact"><a href="#piter" aria-controls="messages" role="tab" data-toggle="tab">Склад в СПб</a></li>
+                                        <li role="presentation" class="moskva-contact"><a href="#moskva" aria-controls="settings" role="tab" data-toggle="tab">Склад в Москве</a></li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="mainoffice">
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="piter">
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane fade" id="moskva">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

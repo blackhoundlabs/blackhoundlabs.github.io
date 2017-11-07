@@ -62,6 +62,7 @@ body {
     background-size: contain;
 }
 
+
 .wrapper {
     width: 90%;
     margin: 0 5%;
@@ -211,21 +212,35 @@ footer.section {
     background-color: #f16529;
     padding: 10px 0 10px 40px;
 }
-.section ul {
+.section.section-metall ul, .section.section-cable ul {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 
     list-style: none;
     padding: 0;
 }
-.section ul li {
-    width: 22%;
-    /*font-size: 0;*/
+
+.section.section-metall ul {
+    justify-content: space-around;
 }
 
-.section ul li div {
+.section.section-cable ul {
+    justify-content: center;
+}
+
+.section.section-metall ul li {
+    width: 22%;
+}
+
+.section.section-cable ul li {
+    margin: 0 30px;
+    width: 22%;
+
+}
+
+.section.section-metall ul li div, .section.section-cable ul li div {
     position: absolute;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 70%;
@@ -233,6 +248,8 @@ footer.section {
     background-position: 0 50%;
 }
 
+
+/* ======== links img's in nav lists ======== */
 .truba {
     background: #000 url('../img/menu-truba.jpg') no-repeat;
 }
@@ -290,22 +307,23 @@ footer.section {
     background: #000 url('../img/menu-control.jpg') no-repeat;
 }
 
+/* ======== links img's in nav lists ======== */
 
-
-
-.section ul li a {
+.section.section-metall ul li a, .section.section-cable ul li a {
     display: block;
     width: 100%;
     height: 260px;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+    background-color: white;
     position: relative;
+    overflow: hidden;
     margin: 30px auto;
     border-radius: 0;
-    transition: all .5s ease-out;
+    transition: all .16s ease-out;
     box-shadow: 0 6px 12px 0 rgba(54, 70, 84, 0.4);
 
 }
-.section ul li a:hover {
+.section.section-metall ul li a:hover, .section.section-cable ul li a:hover {
     background-color: #fff;
     
     -webkit-box-shadow: 0 12px 16px rgba(0,0,0,0.3);
@@ -314,11 +332,12 @@ footer.section {
 
     transform: translateY(-4px);
 
-    transition: all .5s ease-out;
+    transition: all .32s ease-out;
 }
 
-.section ul li a span {
+.section.section-metall ul li a span, .section.section-cable ul li a span {
     position: absolute;
+    z-index: 2;
     bottom: 0;
     font-size: 18px;
     color: #505050;
@@ -327,6 +346,48 @@ footer.section {
     font-family: roboto;
     margin: 0 20px 10px 20px;
 }
+.section ul li a .a__circle-animate {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: absolute;
+    top: 235px;
+    left: 20px;
+    border-radius: 80px;
+    transition: all .24s ease-out;
+    z-index: 1;
+    opacity: 0;    
+}
+
+.section ul li a:hover .a__circle-animate {
+    transform: scale(16);
+    opacity: 1;
+    /*transition: all .24s ease-out;*/
+}
+
+
+/* ======== map ============ */
+
+.section.section-map ul {
+    /*display: block;*/
+}
+
+.section.section-map ul li {
+    /*margin: 0 30px;*/
+}
+
+#moskva, #piter, #mainoffice {
+    height: 300px;
+    padding: 0;
+    background: #FFF;
+}
+
+.section.section-map .contact-address {
+    display: inline-block;
+}
+
+
 
 
 

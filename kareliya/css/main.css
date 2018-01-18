@@ -163,23 +163,40 @@ body {
 
 .flipster__button--next {
     right: 415px;
+
+    width: 400px;
+    height: 100%;
+    transform: translateY(-50%);
 }
 
 .flipster__button--prev {
     left: 415px;
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    width: 400px;
+    height: 100%;
 }
 
 .flipster__button--prev img,
 .flipster__button--next img {
     width: 110px;
+
+    position: absolute;
+}
+.flipster__button--next img {
+    right: 0;
+}
+.flipster__button--prev img {
+    left: 0;
+    transform: rotate(180deg);
 }
 
 .my-flipster--caption {
     position: absolute;
     bottom: 30px;
     right: 55px;
+    z-index: 10001;
 }
 
 .flipster__item--past .my-flipster--caption,

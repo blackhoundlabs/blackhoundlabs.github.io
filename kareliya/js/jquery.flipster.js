@@ -327,7 +327,7 @@
                 if ( skipTransition ) { noTransition(); }
 
                 _containerWidth = _container.width();
-                _container.height(calculateBiggestItemHeight() + 20);
+                _container.height(calculateBiggestItemHeight() + 100);
 
                 // Prevent maximum callstack error. #79 #74
                 if ( !_containerWidth ) {

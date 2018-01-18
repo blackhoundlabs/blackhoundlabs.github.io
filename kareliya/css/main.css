@@ -4,6 +4,8 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
+    min-height: 100%;
 }
 
 ::-moz-selection {
@@ -118,6 +120,7 @@ body {
     background: url(../img/izru__kareliya--background.jpg);
 
     background-size: cover;
+    background-position: top center;
 }
 
 .wrapper {
@@ -138,28 +141,24 @@ body {
 }
 
 .my-flipster {
-    /*align-self: center;*/
     width: 100%;
-    top: 53%;
-    transform: translateY(-50%);
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .my-flipster .flipster__item--current .flipster__item__content img {
-      /*background-image: -webkit-linear-gradient(67deg, rgb(106,130,134) 0%, rgb(18,28,33) 100%);
-      background-image: -o-linear-gradient(67deg, rgb(106,130,134) 0%, rgb(18,28,33) 100%);
-      background-image: linear-gradient(157deg, rgb(106,130,134) 0%, rgb(18,28,33) 100%);*/
-        
-        -webkit-box-shadow: 0 16px 26px 0 rgba(0,0,0,0.5);
-        -moz-box-shadow: 0 16px 26px 0 rgba(0,0,0,0.5);
-
+      -webkit-box-shadow: 0 16px 26px 0 rgba(0,0,0,0.5);
       box-shadow: 0 16px 26px 0 rgba(0, 0, 0, 0.5);
+      
       z-index: 148;
 }
 
 
 .flipster__item--future .flipster__item__content img,
 .flipster__item--past .flipster__item__content img {
-    filter: brightness(.3);
+    -webkit-filter: brightness(.3);
+            filter: brightness(.3);
 }
 
 .flipster__button--next {
@@ -168,7 +167,8 @@ body {
 
 .flipster__button--prev {
     left: 415px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .flipster__button--prev img,
@@ -202,6 +202,7 @@ body {
     line-height: 1.3;
     color: #b2b2b2;
     letter-spacing: 1.1px;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
 
@@ -209,7 +210,9 @@ body {
     top: 50%;
     left: 0;
 
-    transform: rotate(-90deg) scale(1);
+    -webkit-transform: rotate(-90deg) scale(1);
+
+            transform: rotate(-90deg) scale(1);
 }
 
 .my-flipster--nav-past-text-bold {
@@ -225,6 +228,7 @@ body {
     line-height: 1.3;
     color: #b2b2b2;
     letter-spacing: 1.1px;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
 
@@ -232,7 +236,9 @@ body {
     top: 50%;
     right: 0;
 
-    transform: rotate(-90deg) scale(1);
+    -webkit-transform: rotate(-90deg) scale(1);
+
+            transform: rotate(-90deg) scale(1);
 }
 
 .my-flipster--nav-future-text-bold {
@@ -277,14 +283,18 @@ body {
 }
 
 .rect {
-    width: 370px;
-    height: 640px;
+    max-width: 370px;
+    max-height: 640px;
+    width: 80%;
+    height: 80%;
     border: 10px solid white;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
     left: 50%;
-    box-shadow: 0 8px 18px 0 rgba(4, 44, 23, 0.2), inset 0 8px 18px 0 rgba(4, 44, 23, 0.2);
+    -webkit-box-shadow: 0 8px 18px 0 rgba(4, 44, 23, 0.2), inset 0 8px 18px 0 rgba(4, 44, 23, 0.2);
+            box-shadow: 0 8px 18px 0 rgba(4, 44, 23, 0.2), inset 0 8px 18px 0 rgba(4, 44, 23, 0.2);
 
     text-align: center;
     font-family: 'Alegreya Sans SC';
@@ -295,15 +305,7 @@ body {
     padding-top: 20px;
 }
 
-.rect:before, .rect:after {
-    content: '';
-    display: block;
-    background: url(../img/graphic--greentrees.svg) no-repeat;
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    top: 67px;
-}
+
 
 .rect__graphic {
     width: 100%;
@@ -335,6 +337,16 @@ body {
     left: 50%;
 }
 
+.rect:before, .rect:after {
+    content: '';
+    display: block;
+    background: url(../img/graphic--greentrees.svg) no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 67px;
+}
+
 .rect:before {
     left: -44px;
 }
@@ -346,7 +358,7 @@ body {
 .rect__text-bold {
     font-weight: 500;
     font-size: 72px;
-    display: inline-block;
+    display: block;
 
     margin-top: -37px;
 }
@@ -357,12 +369,132 @@ body {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
+    .rect {
+        font-size: 20px;
+        border: 6px solid #fff;
+    }
+    .rect__text-bold {
+        font-size: 42px;
+        margin-top: -16px;
+    }
+    .rect:before {
+        left: 14px;
+    }
 
+    .rect:after {
+        right: 14px;
+    }
+    .rect:before, .rect:after {
+        top: 49px;
+    }
+    .rect__graphic:before {
+        display: none;
+    }
+    .rect__graphic:after {
+        display: none;
+    }
+
+    .my-flipster {
+        top: 63%;
+    }
+    .flipster__item img {
+        max-width: 90vw;
+    }
+    .flipster--carousel .flipster__item--past-1 .flipster__item__content {
+        transform: rotateY(0) scale(1);
+    }
+    .flipster--carousel .flipster__item--future-1 .flipster__item__content {
+        transform: rotateY(0) scale(1);
+    }
+    .flipster--carousel .flipster__item {
+        perspective: none;
+    }
+    .flipster__item--future .flipster__item__content img, .flipster__item--past .flipster__item__content img {
+        visibility: hidden;
+    }
+    .my-flipster--nav-past-text {
+        line-height: 0.9;
+        color: black;
+        text-transform: none;
+        text-align: right;
+
+        top: inherit;
+        bottom: -60px;
+        right: 70px;
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);        
+    }
+    .my-flipster--nav-future-text {
+        line-height: 0.9;
+        color: black;
+        text-transform: none;
+        text-align: left;
+
+        top: inherit;
+        bottom: -60px;
+        left: 70px;
+        -webkit-transform: rotate(0) scale(1);
+        transform: rotate(0) scale(1);        
+    }
+    .my-flipster--nav-past-text-bold, .my-flipster--nav-future-text-bold {
+        font-size: 18px;
+        color: black;
+    }
+    .slide-2.flipster__item--past .my-flipster--nav-future-text {
+        display: none;
+    }
+    .slide-2.flipster__item--future .my-flipster--nav-past-text {
+        display: none;
+    }
+    .my-flipster--caption {
+        bottom: 12px;
+        right: 28px;
+    }
+    .slider__link {
+        font-size: 24px;
+    }
+    .slider__link--bold {
+        font-size: 38px;
+    }
+    .slider__link--more {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+    .slider__link--more:before {
+        right: 105px;
+    }
+    .my-flipster--nav-past-text:before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 12px;
+        position: absolute;
+        background: url(../img/graphic--nav-mobile.svg) no-repeat;
+        top: -17px;
+        right: 1px;
+    }
+    .my-flipster--nav-future-text:before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 12px;
+        position: absolute;
+        background: url(../img/graphic--nav-mobile.svg) no-repeat;
+        top: -17px;
+        left: 1px;
+        transform: rotate(180deg);
+    }
+    .flipster__button {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
 
@@ -426,7 +558,8 @@ body {
     *:after {
         background: transparent !important;
         color: #000 !important;
-        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
         text-shadow: none !important;
     }
 

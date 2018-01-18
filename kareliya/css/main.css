@@ -165,8 +165,8 @@ body {
     right: 415px;
 
     width: 400px;
-    height: 100%;
-    transform: translateY(-50%);
+    height: 50%;
+    transform: translateY(-90%);
 }
 
 .flipster__button--prev {

@@ -12,5 +12,6 @@ function hideAddressBar() {
             window.scrollTo(0, 1);
         }, 1100);
     }, 1000);
+    console.log("orientationchange");
     return false;
 }

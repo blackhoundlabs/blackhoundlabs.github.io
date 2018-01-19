@@ -507,8 +507,84 @@ body {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 992px) {
+    .rect {
+        padding-top: 10px;
+    }
+    .rect__graphic:before {
+        top: 34%;
+    }
+
+    .my-flipster {
+        top: 74%;
+    }
+    .flipster__item img {
+        max-width: 37vw;
+    }
+    .flipster--carousel .flipster__item--past-1 .flipster__item__content {
+        transform: rotateY(45deg) scale(.8) translateX(-50px);
+    }
+    .flipster--carousel .flipster__item--future-1 .flipster__item__content {
+        transform: rotateY(-45deg) scale(.8) translateX(50px);
+    }
+    .flipster--carousel .flipster__item {
+        /*perspective: none;*/
+    }
+    .flipster__item--future .flipster__item__content img, .flipster__item--past .flipster__item__content img {
+        /*visibility: hidden;*/
+    }
+    .my-flipster--nav-past-text {
+        top: 40%;
+    }
+    .my-flipster--nav-future-text {
+        top: 40%;
+    }
+    .my-flipster--nav-past-text-bold, .my-flipster--nav-future-text-bold {
+        /*font-size: 18px;*/
+        /*color: black;*/
+    }
+    /*.slide-2.flipster__item--past .my-flipster--nav-future-text {
+        display: none;
+    }
+    .slide-2.flipster__item--future .my-flipster--nav-past-text {
+        display: none;
+    }*/
+    .my-flipster--caption {
+        bottom: 12px;
+        right: 28px;
+    }
+    .slider__link {
+        font-size: 24px;
+    }
+    .slider__link--bold {
+        font-size: 32px;
+    }
+    .slider__link--more {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+    .slider__link--more:before {
+        right: 105px;
+    }
+    .my-flipster--nav-past-text:before {
+        display: none;
+    }
+    .my-flipster--nav-future-text:before {
+        display: none;
+    }
     
+    .flipster__button--next, .flipster__button--prev {
+        top: 40%;
+        transform: none;
+        width: auto;
+        height: auto;
+    }
+    .flipster__button--next {
+        right: 20px
+    }
+    .flipster__button--prev {
+        left: 20px
+    }
 }
 
 @media print,

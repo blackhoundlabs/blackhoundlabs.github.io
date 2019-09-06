@@ -348,7 +348,7 @@ body {
 					font-size: 30px;
 					font-weight: 300;
 					color: white;
-					margin: 1.5rem 0 .5rem 160px;
+					margin: 1.5rem 0 .5rem 10px;
 				}
 				.resume span.prof {
 					font-size: 18px;
@@ -440,7 +440,7 @@ body {
 		position: absolute;
 	    right: 15%;
 	    bottom: 15px;
-	    text-align: right;
+	    text-align: left;
 	}
 	.content ul.items-list {
 		padding: 0;

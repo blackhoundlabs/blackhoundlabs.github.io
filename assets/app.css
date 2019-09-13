@@ -368,7 +368,7 @@ body {
 					font-size: 30px;
 					font-weight: 300;
 					color: white;
-					margin: 1.5rem 0 .5rem 10px;
+					margin: 1.5rem 0 .5rem 160px;
 				}
 				.resume span.prof {
 					font-size: 18px;
@@ -399,6 +399,7 @@ body {
 						line-height: 20px;
 						font-weight: 300;
 						color: white;
+						margin: 1.5rem 0 .5rem 10px;
 					}
 					.social ul {
 						margin: 1rem 0 0 0;

@@ -481,7 +481,7 @@ body {
 		width: 100%;
 		max-width: 18rem;
 		height: auto;
-		border-bottom: .25rem solid #c9c9c9;
+/* 		border-bottom: .25rem solid #c9c9c9; */
 		background-color: white;
 		margin: 0 auto;
 		position: relative;

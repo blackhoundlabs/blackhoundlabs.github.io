@@ -6,7 +6,7 @@ html, body {
 		height: 100%
 	}
 body {
-		font-family: Inter, Ubuntu, Calibri, sans-serif;
+		font-family: Ubuntu, Calibri, sans-serif;
 }
 
 
@@ -123,7 +123,7 @@ body {
 		.resume h3 {
 			font-size: 26px;
 		    font-weight: 600;
-		    color: #4343;
+		    color: #434343;
 			margin: 1.5rem 0 .5rem 0;
 		}
 		.resume span.prof {
@@ -284,14 +284,14 @@ body {
 					margin: 1rem 0 0 0;
 				}
 				.resume h3 {
-					font-size: 26px;
+					font-size: 30px;
 				    font-weight: 600;
 				    color: #434343;
 					margin: 1.5rem 0 .5rem 160px;;
 				}
 				.resume span.prof {
-					font-size: 18px;
-					line-height: 25px;
+					font-size: 16px;
+					line-height: 23px;
 				    font-weight: 400;
 				    color: #434343;
 				    margin: 1rem 0 .5rem 160px;
@@ -368,8 +368,8 @@ body {
 				}
 				.resume h3 {
 					font-size: 30px;
-					font-weight: 300;
-					color: white;
+					font-weight: 600;
+					color: #434343;
 					margin: 1.5rem 0 .5rem 160px;
 				}
 				.resume span.prof {
@@ -405,12 +405,15 @@ body {
 						margin: 1.5rem 0 .5rem 160px;
 					}
 					.social ul {
-						margin: 1rem 0 0 0;
+						margin: .5rem 0 0 0;
 						padding: 0;
 					}
 					.social ul li {
 						display: inline-block;
 						margin: 0 .4rem;
+					}
+					.social ul li:first {
+						margin: 0 .4rem 0 0;
 					}
 	}
 
@@ -452,7 +455,7 @@ body {
 
 @media only screen and (min-width: 1600px) {
 	.header .resume {
-		padding: 1rem 0 0 0;
+		padding: 2rem 0 0 8rem;
 	    width: 70%;
 	    margin: 0 auto;
 	}
@@ -461,10 +464,10 @@ body {
 		margin: 2.5rem 15% 0 0;
 	}
 	.resume .social {
-		position: absolute;
+/* 		position: absolute;
 	    right: 15%;
 	    bottom: 15px;
-	    text-align: left;
+	    text-align: left; */
 	}
 	.content ul.items-list {
 		padding: 0;

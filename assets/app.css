@@ -405,14 +405,14 @@ body {
 						margin: 1.5rem 0 .5rem 160px;
 					}
 					.social ul {
-						margin: .5rem 0 0 0;
+						margin: .5rem 0 0 160px;
 						padding: 0;
 					}
 					.social ul li {
 						display: inline-block;
 						margin: 0 .4rem;
 					}
-					.social ul li:first {
+					.social ul li:nth-child(1) {
 						margin: 0 .4rem 0 0;
 					}
 	}

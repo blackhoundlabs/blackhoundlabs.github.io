@@ -6,7 +6,7 @@ html, body {
 		height: 100%
 	}
 body {
-		font-family: Ubuntu, Calibri, sans-serif;
+		font-family: Inter, Ubuntu, Calibri, sans-serif;
 }
 
 
@@ -30,13 +30,14 @@ body {
 		}
 		.header {
 			height: 95%;
-			min-height: 28rem;
+			min-height: 25rem;
+ 			background: none;
 /* 			background-image: url('./images/header_small_screen.jpg'); */
-			background: rgb(140,118,187);
+/* 			background: rgb(140,118,187);
 			background: -moz-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: -webkit-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1); */
 		}
 			.header .menu {
 			    bottom: 25px;
@@ -62,19 +63,19 @@ body {
 				}
 			.header .resume {
 				text-align: center;
-				padding: 2.5rem 0 0 0;
+				padding: 3rem 0 0 0;
 			}
 				.resume h3 {
 					font-size: 26px;
-				    font-weight: 400;
-				    color: white;
-					margin: 1.5rem 0 .5rem 0;
+				    font-weight: 600;
+				    color: #434343;
+					margin: 1.5rem 0 1rem 0;
 				}
 				.resume span.prof {
 					font-size: 18px;
-					line-height: 20px;
-				    font-weight: 300;
-				    color: white;
+					line-height: 25px;
+				    font-weight: 400;
+				    color: #434343;
 				    margin: 0 auto;
 				    width: 80%;
 				    display: block;
@@ -89,8 +90,8 @@ body {
 						.social h3 {
 							font-size: 16px;
 							line-height: 20px;
-							font-weight: 300;
-							color: white;
+							font-weight: 400;
+							color: #434343;
 						}
 						.social ul {
 							margin: .5rem 0 0 0;
@@ -106,13 +107,13 @@ body {
 
 	@media only screen and (min-width: 400px) and (max-width: 490px) {
 		.header {
-			height: 21.5rem;
+			height: 23.5rem;
 /* 			background-image: url('./images/header.jpg'); */
-			background: rgb(140,118,187);
+/* 			background: rgb(140,118,187);
 			background: -moz-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: -webkit-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1); */
 		}
 		.header .menu ul {
 			padding: 0;
@@ -121,23 +122,23 @@ body {
 		}
 		.resume h3 {
 			font-size: 26px;
-		    font-weight: 400;
-		    color: white;
-			margin: 1.5rem 0 .5rem 160px;;
+		    font-weight: 600;
+		    color: #4343;
+			margin: 1.5rem 0 .5rem 0;
 		}
 		.resume span.prof {
 			font-size: 16px;
-			line-height: 20px;
-		    font-weight: 300;
-		    color: white;
-		    margin: .5rem 0 .5rem 160px;
+			line-height: 23px;
+		    font-weight: 400;
+		    color: #434343;
+		    margin: 1rem 0 .5rem 0;
 		    display: block;
 		}
 		.resume p {
 			display: none;
 		}
 		.resume .social {
-			margin: 3.5rem 0 0 0;
+			margin: 1.5rem 0 0 0;
 			text-align: center;
 		}
 			.social ul {
@@ -149,8 +150,8 @@ body {
 
 	@media only screen and (min-width: 491px) and (max-width: 700px) {
 		.header {
-			height: 18rem;
-			background-image: url('./images/header.jpg');
+			height: 23.5rem;
+/* 			background-image: url('./images/header.jpg'); */
 		}
 		.header .menu ul {
 			padding: 0;
@@ -158,23 +159,23 @@ body {
 		}
 		.resume h3 {
 			font-size: 26px;
-		    font-weight: 400;
-		    color: white;
-			margin: 1.5rem 0 .5rem 160px;;
+		    font-weight: 600;
+		    color: #434343;
+			margin: 1.5rem 0 .5rem 0;
 		}
 		.resume span.prof {
 			font-size: 18px;
-			line-height: 20px;
-		    font-weight: 300;
-		    color: white;
-		    margin: .5rem 0 .5rem 160px;
+			line-height: 25px;
+		    font-weight: 400;
+		    color: #434343;
+		    margin: 1rem 0 .5rem 0;
 		    display: block;
 		}
 		.resume p {
 			display: none;
 		}
 		.resume .social {
-			margin: 1rem 0 0 160px;
+			margin: 1.5rem 0 0 0;
 		}
 			.social ul {
 				margin: 1rem 0 0 0;
@@ -210,18 +211,19 @@ body {
 				}
 			.header .resume {
 				padding: 1rem 0 0 0;
-				width: 80%;
+				width: 85%;
+				text-align: center;
     			margin: 0 auto;
 			}
 				.resume img {
-					float: left;
+/* 					float: left; */
 					margin: 1rem 0 0 0;
 				}
 						.social h3 {
 							font-size: 16px;
 							line-height: 20px;
-							font-weight: 300;
-							color: white;
+							font-weight: 400;
+							color: #434343;
 							margin: 0;
 						}
 						.social ul li {
@@ -240,13 +242,13 @@ body {
 			width: 31%;
 		}
 		.header {
-			height: 18rem;
+			height: 15rem;
 /* 			background-image: url('./images/header.jpg'); */
-			background: rgb(140,118,187);
+/* 			background: rgb(140,118,187);
 			background: -moz-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: -webkit-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1); */
 		}
 			.header .menu {
 			    bottom: 15px;
@@ -273,8 +275,8 @@ body {
 					margin: 0 30px;
 				}
 			.header .resume {
-				padding: 1rem 0 0 0;
-				width: 80%;
+				padding: 2rem 0 0 4rem;
+				width: 85%;
     			margin: 0 auto;
 			}
 				.resume img {
@@ -283,16 +285,16 @@ body {
 				}
 				.resume h3 {
 					font-size: 26px;
-				    font-weight: 400;
-				    color: white;
+				    font-weight: 600;
+				    color: #434343;
 					margin: 1.5rem 0 .5rem 160px;;
 				}
 				.resume span.prof {
 					font-size: 18px;
-					line-height: 20px;
-				    font-weight: 300;
-				    color: white;
-				    margin: .5rem 0 .5rem 160px;
+					line-height: 25px;
+				    font-weight: 400;
+				    color: #434343;
+				    margin: 1rem 0 .5rem 160px;
 				    display: block;
 				}
 				.resume p {
@@ -304,8 +306,8 @@ body {
 						.social h3 {
 							font-size: 16px;
 							line-height: 20px;
-							font-weight: 300;
-							color: white;
+							font-weight: 400;
+							color: #434343;
 							margin: 0;
 						}
 						.social ul {
@@ -330,11 +332,11 @@ body {
 		.header {
 			height: 16.25rem;
 /* 			background-image: url('./images/header.jpg'); */
-			background: rgb(140,118,187);
+/* 			background: rgb(140,118,187);
 			background: -moz-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: -webkit-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
 			background: linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1); */
 		}
 
 			.header .menu {
@@ -356,8 +358,8 @@ body {
 					margin: 0 0 0 40px;
 				}
 			.header .resume {
-				padding: 1rem 0 0 0;
-			    width: 80%;
+				padding: 2rem 0 0 4rem;
+			    width: 85%;
 			    margin: 0 auto;
 			}
 				.resume img {
@@ -371,12 +373,12 @@ body {
 					margin: 1.5rem 0 .5rem 160px;
 				}
 				.resume span.prof {
-					font-size: 18px;
+					font-size: 16px;
 					line-height: 23px;
-					font-weight: 300;
-					color: white;
-					width: 320px;
-					margin: .5rem 0 60px 160px;
+					font-weight: 400;
+					color: #434343;
+/* 					width: 320px; */
+					margin: .75rem 0 0 160px;
 					display: block;
 				}
 				.resume p {
@@ -389,17 +391,18 @@ body {
 				    margin: 0 0 0 160px;
 				}
 				.resume .social {
-					position: absolute;
+/* 					position: absolute;
 				    right: 10%;
 				    bottom: 15px;
-				    text-align: right;
+				    text-align: right; */
+					margin: 1rem 0 0 0;
 				}
 					.social h3 {
 						font-size: 16px;
 						line-height: 20px;
-						font-weight: 300;
-						color: white;
-						margin: 1.5rem 0 .5rem 10px;
+						font-weight: 400;
+						color: #434343;
+						margin: 1.5rem 0 .5rem 160px;
 					}
 					.social ul {
 						margin: 1rem 0 0 0;
@@ -498,14 +501,14 @@ body {
 			background-size: cover;
 			position: relative;
 
-			box-shadow: 0 15px 15px hsla(200, 20%, 20%, 0.24);
+/* 			box-shadow: 0 15px 15px hsla(200, 20%, 20%, 0.24); */
 		}
 			
 			.social ul li a {
 				display: block;
 			}
 				.social .twitter, .social .facebook, .social .linkedin, .social .email, .social .behance {
-					background-image: url('./images/socials.png');
+					background-image: url('./images/socials-dark.png');
 					background-repeat: no-repeat;
 					width: 25px;
 				    height: 25px;
@@ -527,7 +530,7 @@ body {
 					background-position: -124px 0;
 				}
 				.social .headhunter {
-					background-image: url('./images/headhunter.png');
+					background-image: url('./images/headhunter-dark.png');
 					background-repeat: no-repeat;
 					width: 25px;
 				    height: 25px;

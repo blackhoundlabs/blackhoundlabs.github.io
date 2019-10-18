@@ -111,7 +111,15 @@ body {
 						}
 						.social ul li {
 							margin: 0 6px 0 0;
-							
+							display: inline-block;
+						}
+						.social .email {
+							width: 38px;
+							height: 38px;
+						}
+						.social .headhunter {
+							width: 38px;
+							height: 38px;
 						}
 	}
 
@@ -573,8 +581,6 @@ body {
 					background-image: url('./images/mail-icon.svg');
 					background-repeat: no-repeat;
 					background-position: 0 0;
-					width: 38px;
-					height: 38px;
 				}
 				.social .behance {
 					background-position: -124px 0;
@@ -583,8 +589,6 @@ body {
 					background-image: url('./images/hh-icon.svg');
 					background-repeat: no-repeat;
 					background-position: 0 0;
-					width: 38px;
-					height: 38px;
 				}
 
 		.content {

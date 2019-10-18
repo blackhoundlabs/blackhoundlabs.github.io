@@ -480,10 +480,10 @@ body {
 
 @media only screen and (min-width: 1359px) {
 				.resume .social {
-					margin: .1rem 0 0 0;
+					margin: 1rem 0 0 0;
 				}
 					.social ul {
-						margin: 1.25rem 0 0 0;
+						margin: 0.25rem 0 0 0;
 					}
 					.social .email {
 						width: 24px;

@@ -128,12 +128,6 @@ body {
 	@media only screen and (min-width: 400px) and (max-width: 490px) {
 		.header {
 			height: 26rem;
-/* 			background-image: url('./images/header.jpg'); */
-/* 			background: rgb(140,118,187);
-			background: -moz-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			background: -webkit-linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			background: linear-gradient(90deg, rgba(140,118,187,1) 0%, rgba(111,141,186,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8c76bb",endColorstr="#6f8dba",GradientType=1); */
 		}
 		.header .menu ul {
 			padding: 0;
@@ -166,6 +160,14 @@ body {
 			.social ul {
 				margin: .5rem 0 0 0;
 				padding: 0;
+			}
+			.social .email {
+				width: 38px;
+				height: 38px;
+			}
+			.social .headhunter {
+				width: 38px;
+				height: 38px;
 			}
 	}
 
@@ -204,6 +206,14 @@ body {
 			.social ul {
 				margin: .5rem 0 0 0;
 				padding: 0;
+			}
+			.social .email {
+				width: 38px;
+				height: 38px;
+			}
+			.social .headhunter {
+				width: 38px;
+				height: 38px;
 			}
 	}
 
@@ -259,6 +269,14 @@ body {
 						}
 						.social ul li:nth-child(1) {
 							margin: 0 6px 0 0;
+						}
+						.social .email {
+							width: 38px;
+							height: 38px;
+						}
+						.social .headhunter {
+							width: 38px;
+							height: 38px;
 						}
 	}
 
@@ -347,6 +365,14 @@ body {
 						}
 						.social ul li:nth-child(1) {
 							margin: 0 6px 0 0;
+						}
+						.social .email {
+							width: 38px;
+							height: 38px;
+						}
+						.social .headhunter {
+							width: 38px;
+							height: 38px;
 						}
 	}
 

@@ -41,11 +41,11 @@
 	}
 	.workContainer p {
 		font-size: 1rem;
-    	line-height: 1.4rem;
+    	line-height: 1.5rem;
 		margin: 1.5rem 2rem;
 	}
 	.workContainer .worktype, .workContainer .author {
-		margin: 0 2rem 0 6rem;
+		margin: .3rem 2rem 0 6rem;
 		text-align: right;
 	}
 	.workContainer .social ul.lang {
@@ -146,15 +146,15 @@
 	.workContainer h2 {
 		font-size: .875rem;
 		font-weight: 400;
-		margin: 1rem 0 .5rem 4rem;
+		margin: 1rem 0 .5rem 8rem;
 	}
 	.workContainer p {
 		font-size: .875rem;
-	    line-height: 1.2rem;
-	    margin: 1.5rem 4rem;
+	    line-height: 1.3rem;
+	    margin: 1.5rem 4rem 1.5rem 8rem;
 	}
 	.workContainer .author, .workContainer .worktype {
-		margin: 0 2rem 0 8rem;
+		margin: .3rem 2rem 0 8rem;
 		text-align: left;
 	}
 	.workContainer .social ul.lang {
@@ -162,7 +162,7 @@
     	top: -1.7rem;
 	}
 	.workContainer .social ul.share {
-		left: 8rem;
+		left: 11rem;
     	top: -1.4rem;
 	}
 	.workContainer nav ul {
@@ -403,7 +403,7 @@
 	}
 	.workContainer .worktype {
 		font-size: .875rem;
-		font-weight: 400;
+		font-weight: 500;
 	}
 	.workContainer .author {
 		font-size: .75rem;

@@ -475,6 +475,13 @@ body {
 						
 	}
 
+/* mediaqueries for large screens */
+
+@media only screen and (min-width: 1024px) {
+		ul.items-list li {
+			width: 23%;
+		}
+}
 
 /* mediaqueries for large screens */
 

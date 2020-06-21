@@ -662,7 +662,7 @@ body {
 				    bottom: 10px;
 				}
 					.coffee {
-						background-image: url('./images/coffee.png');
+						background-image: url('./images/coffee.svg');
 						background-size: 24px 24px;
 					}
 					.code {

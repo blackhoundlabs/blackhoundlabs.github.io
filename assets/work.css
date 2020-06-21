@@ -224,12 +224,12 @@
 	}
 
 	.workContainer .backArrow {
-	    top: 0.5rem;
-    	left: 1.5rem;
+	    	top: 0;
+    		left: 1.5rem;
 	}
 	.workContainer .label {
 		top: 3rem;
-    	left: 4rem;
+    		left: 5.6rem;
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
 		width: 15px;

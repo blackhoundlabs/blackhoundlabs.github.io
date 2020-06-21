@@ -563,6 +563,7 @@ body {
 		background-color: white;
 		margin: 0 auto;
 		position: relative;
+		border-radius: 24px;
 	}
 }
 
@@ -636,14 +637,12 @@ body {
 			}
 				.item-wrapper h2 {
 					font-size: 12px;
-					line-height: 12px;
-					font-weight: 300;
-					/*color: #9e9e9e;*/
-					color: #808080;
+					line-height: 42px;
+					font-weight: 500;
+					color: #696969;
 					text-align: left;
-					/*margin: .4rem .4rem .4rem 4rem;*/
-					padding: 0.6rem .4rem 0.5rem 4rem;
-    				margin: 0;
+					padding: 0rem .4rem;
+    					margin: 0;
 				}
 				.item-wrapper .h2-gif {
 					/*margin-left: 5rem;*/
@@ -652,24 +651,28 @@ body {
 				.item-wrapper img {
 					width: 100%;
 					height: auto;
+					border-radius: 24px 24px 0 0;
 				}
 				.label {
 				    background-repeat: no-repeat;
 				    background-size: initial;
 				    position: absolute;
-			        width: 39px;
-				    height: 39px;
-				    left: 8px;
-				    bottom: -5px;
+			            width: 24px;
+				    height: 24px;
+				    left: 12px;
+				    bottom: 10px;
 				}
 					.coffee {
 						background-image: url('./images/coffee.png');
+						background-size: 24px 24px;
 					}
 					.code {
 						background-image: url('./images/code.png');
+						background-size: 24px 24px;
 					}
 					.blog {
 						background-image: url('./images/blog.png');
+						background-size: 24px 24px;
 					}
 				.item-wrapper .gif {
 					background-image: url('./images/gif.png');

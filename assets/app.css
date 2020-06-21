@@ -522,12 +522,11 @@ body {
 	}
 	.item-wrapper {
 		width: 100%;
-/* 		max-width: 15.625rem; */
 		height: auto;
-		/*border-bottom: .25rem solid #c9c9c9;*/
 		background-color: white;
 		margin: 0 auto;
 		position: relative;
+		border-radius: 24px;
 	}
 }
 

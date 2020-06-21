@@ -187,8 +187,10 @@
     	left: 2rem;
 	}
 	.workContainer .label {
-	    top: 4.3rem;
-		left: 2rem;
+	        top: 4rem;
+		left: 1.8rem;
+		width: 32px;
+		height: 32px;
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
 	    width: 23px;
@@ -228,8 +230,10 @@
     		left: 1.5rem;
 	}
 	.workContainer .label {
-		top: 3rem;
-    		left: 5.6rem;
+		top: 2.7rem;
+		left: 5rem;
+		width: 24px;
+		height: 32px;
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
 		width: 15px;

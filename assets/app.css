@@ -674,14 +674,14 @@ body {
 						background-size: 24px 24px;
 					}
 				.item-wrapper .gif {
-					background-image: url('./images/gif.png');
+					background-image: url('./images/gif.svg');
 					background-repeat: no-repeat;
-				    background-size: initial;
-				    position: absolute;
-				    width: 20px;
-				    height: 20px;
-				    left: 3.3rem;
-				    bottom: .2rem;
+					background-size: 18px 18px;
+					position: absolute;
+					width: 18px;
+					height: 18px;
+					left: 42px;
+					bottom: 12px;
 				}
 			.content ul.items-list li.yellow {
 			}

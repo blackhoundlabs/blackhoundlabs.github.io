@@ -295,18 +295,12 @@
 		width: 100%;
 		height: 2rem;
 	}	
-		.workContainer .backArrow.orange {
-			background-position: 0 0;
-		}
-		.workContainer .backArrow.gray {
-			background-position: -27px 0;
-		}
 		.workContainer .backArrow {
-			background: url('./images/back_arrow.png') no-repeat;
-
-		    width: 25px;
-		    height: 25px;
-		    display: block;
+			background: url(./images/arrow-left.svg) no-repeat;
+			background-size: 24px 24px;
+			width: 24px;
+			height: 24px;
+			display: block;
 			position: absolute;
 			z-index: 10;
 		}

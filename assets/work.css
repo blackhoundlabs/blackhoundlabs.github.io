@@ -355,34 +355,28 @@
 
 /* styles for content */
 
-	.workContainer span {
-		display: block;
-	}
 	.workContainer h1 {
-		/*font-size: 1.25rem;*/
-    	font-weight: 500;
-    	/*margin: 0 0 0 10rem;*/
-    	color: #ffa836;
-    	word-wrap: break-word;
+		font-weight: 500;
+		color: #ffa836;
+		word-wrap: break-word;
 	}
 	.workContainer .label {
 		position: absolute;
 		width: inherit;
-    	/*top: -1rem;*/
-    	/*left: 4rem;*/
 	}
 	.workContainer .worktype {
 		font-size: .875rem;
+		display: block;
 		font-weight: 500;
 	}
 	.workContainer .author {
+		display: block;
 		font-size: .75rem;
-    	font-weight: 400;
+    		font-weight: 400;
 	}
 	.workContainer .social {
 		position: relative;
 	}
-
 	.workContainer .social ul {
 		position: absolute;
 	}
@@ -397,43 +391,43 @@
 		margin: 0;
 	}
 	.social .lang .en.active {
-	    background: url("./images/lang_icons_shadow.png");
+		background: url("./images/lang_icons_shadow.png");
 		width: 23px;
 		height: 23px;
 		background-position: 0 0;
 	}
 	.social .lang a.en {
-	    background: url("./images/lang_icons_shadow.png");
+		background: url("./images/lang_icons_shadow.png");
 		width: 23px;
 		height: 23px;
 		background-position: -25px 0;
 	}
 	.social .lang .ru.active {
-	    background: url("./images/lang_icons_shadow.png");
-	    width: 23px;
-	    height: 23px;
-	    background-position: 0 23px;
+		background: url("./images/lang_icons_shadow.png");
+		width: 23px;
+		height: 23px;
+		background-position: 0 23px;
 	}
 	.social .lang a.ru {
-	    background: url("./images/lang_icons_shadow.png");
-	    width: 23px;
-	    height: 23px;
-	    background-position: -25px 23px;
+		background: url("./images/lang_icons_shadow.png");
+		width: 23px;
+		height: 23px;
+		background-position: -25px 23px;
 	}
 	.workContainer p {
-    	font-weight: 400;
-    	white-space: pre-line;
-    	word-wrap: break-word;
+		font-weight: 400;
+		white-space: pre-line;
+		word-wrap: break-word;
 	}
 	.workContainer img {
 		width: 100%;
 		display: block;
 	}
 	.workContainer img.gif {
-	    position: absolute;
-	    left: 0;
-	    margin: 0 auto;
-	    right: 0;
+		position: absolute;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
 	}
 	.workContainer iframe {
 		display: block;

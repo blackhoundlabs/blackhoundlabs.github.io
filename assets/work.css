@@ -194,6 +194,8 @@
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin {
 		background-size: 24px 24px;
+		width: 24px;
+		height: 24px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;
@@ -224,6 +226,8 @@
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin {
 		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;

@@ -324,10 +324,6 @@
 			font-weight: 500;
 			color: #ffa836;
 		}
-
-	/*.workContainer .social {
-		margin: 0 0 2rem 4rem;
-	}*/
 		.workContainer .social ul {
 			padding: 0;
 			margin: 0;
@@ -350,7 +346,7 @@
 		}
 		.workContainer .social .twitter {
 			background-image: url(./images/tw.svg);
-		}*/
+		}
 
 
 /* styles for content */

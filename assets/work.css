@@ -336,7 +336,7 @@
 			display: inline-block;
 			/*margin: 0 .5rem 0 0;*/
 		}
-		.workContainer .social ul li a {
+		.workContainer .social ul li a, .workContainer .social ul li span {
 			display: block;
 		}
 		.workContainer .social .twitter, .workContainer .social .linkedin, .workContainer .social .facebook {

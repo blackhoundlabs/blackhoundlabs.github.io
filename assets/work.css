@@ -193,8 +193,8 @@
 		height: 32px;
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
-	    width: 23px;
-    	height: 23px;
+		width: 24px;
+		height: 24px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;
@@ -205,9 +205,6 @@
 		}
 		.workContainer .social .linkedin {
 			background-position: -30px -17px;
-		}
-		.workContainer .social .facebook {
-		    background-position: -58px -17px;
 		}
 		.workContainer .social .twitter {
 		    background-position: -90px -17px;
@@ -236,8 +233,8 @@
 		height: 32px;
 	}
 	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
-		width: 15px;
-	    height: 15px;
+		width: 16px;
+		height: 16px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;
@@ -248,9 +245,6 @@
 		}
 		.workContainer .social .linkedin {
 			background-position: -18px 0;
-		}
-		.workContainer .social .facebook {
-			background-position: -37px 0;
 		}
 		.workContainer .social .twitter {
 			background-position: -57px 0;
@@ -363,11 +357,15 @@
 		.workContainer .social ul li a {
 			display: block;
 		}
-		.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
+		.workContainer .social .twitter, .workContainer .social .linkedin, .workContainer .social .vk {
 			background-image: url('./images/socials_work.png');
 			background-repeat: no-repeat;
 			/*width: 15px;*/
 		    /*height: 15px;*/
+		}
+		.workContainer .social .facebook {
+			background-image: url(./images/fi.svg);
+			background-repeat: no-repeat;
 		}
 		/*.workContainer .social .vk {
 			background-position-x: 0px;
@@ -375,10 +373,6 @@
 		}
 		.workContainer .social .linkedin {
 			background-position-x: -18px;
-			background-position-y: 0px;
-		}
-		.workContainer .social .facebook {
-			background-position-x: -37px;
 			background-position-y: 0px;
 		}
 		.workContainer .social .twitter {

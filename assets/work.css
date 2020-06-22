@@ -90,7 +90,7 @@
 	}
 	.workContainer .social ul.share {
 		left: 6rem;
-    	top: -1.4rem;
+		top: -1.4rem;
 	}
 	.workContainer nav ul {
 		top: -2rem;
@@ -192,23 +192,13 @@
 		width: 32px;
 		height: 32px;
 	}
-	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
-		width: 24px;
-		height: 24px;
+	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin {
+		background-size: 24px 24px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;
 		margin: 0 .5rem .5rem 0;
 	}
-		.workContainer .social .vk {
-			background-position: 0px -17px;
-		}
-		.workContainer .social .linkedin {
-			background-position: -30px -17px;
-		}
-		.workContainer .social .twitter {
-		    background-position: -90px -17px;
-		}
 	ul.lang li {
 		margin: 0;
 	}
@@ -232,25 +222,14 @@
 		width: 24px;
 		height: 32px;
 	}
-	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin, .workContainer .social .vk {
-		width: 16px;
-		height: 16px;
+	.workContainer .social .twitter, .workContainer .social .facebook, .workContainer .social .linkedin {
+		background-size: 16px 16px;
 	}
 	.workContainer .social ul li {
 		display: inline-block;
 		margin: 0 .5rem 0 0;
 	}
-		.workContainer .social .vk {
-			background-position: 0 0;
-		}
-		.workContainer .social .linkedin {
-			background-position: -18px 0;
-		}
-		.workContainer .social .twitter {
-			background-position: -57px 0;
-		}
 }
-
 
 /* fixed menu styles */
 
@@ -274,16 +253,16 @@
 
 	.workContainer nav.fixed {
 		position: fixed;
-	    max-width: 800px;
-	    width: 100%;
-	    background-color: #fff;
-	    height: 2.5rem;
-	    top: 0rem;
-	    border-bottom: 2px solid #eee;
-	    right: 0;
-	    left: 0;
-	    margin: 0 auto;
-	    z-index: 15;
+		max-width: 800px;
+		width: 100%;
+		background-color: #fff;
+		height: 2.5rem;
+		top: 0rem;
+		border-bottom: 2px solid #eee;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		z-index: 15;
 	}
 	.workContainer a.backArrow.fixed {
 		top: 0.5rem;
@@ -299,19 +278,18 @@
 /* main styles */
 	.workContainer {
 		margin: 0 auto;
-	    max-width: 800px;
-	    position: relative;
+		max-width: 800px;
+		position: relative;
 		background-color: #fff;
 	}
 
-
-	/* styles for navigation */
+/* styles for navigation */
 
 	.workContainer nav	{
 		position: absolute;
-    	right: 0;
-    	width: 100%;
-    	height: 2rem;
+		right: 0;
+		width: 100%;
+		height: 2rem;
 	}	
 		.workContainer .backArrow.orange {
 			background-position: 0 0;
@@ -357,27 +335,17 @@
 		.workContainer .social ul li a {
 			display: block;
 		}
-		.workContainer .social .twitter, .workContainer .social .linkedin, .workContainer .social .vk {
-			background-image: url('./images/socials_work.png');
+		.workContainer .social .twitter, .workContainer .social .linkedin, .workContainer .social .facebook {
 			background-repeat: no-repeat;
-			/*width: 15px;*/
-		    /*height: 15px;*/
 		}
 		.workContainer .social .facebook {
 			background-image: url(./images/fb.svg);
-			background-repeat: no-repeat;
-		}
-		/*.workContainer .social .vk {
-			background-position-x: 0px;
-			background-position-y: 0px; 
 		}
 		.workContainer .social .linkedin {
-			background-position-x: -18px;
-			background-position-y: 0px;
+			background-image: url(./images/li.svg);
 		}
 		.workContainer .social .twitter {
-			background-position-x: -57px;
-			background-position-y: 0px; 
+			background-image: url(./images/tw.svg);
 		}*/
 
 

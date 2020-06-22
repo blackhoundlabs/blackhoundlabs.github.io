@@ -417,7 +417,6 @@
 		word-wrap: break-word;
 	}
 	a[target="_blank"] {
-		background: url("./images/target.png") no-repeat right top .125rem;
 	    padding: 0 1rem 0 0;
 	}
 	.blogContainer .social {

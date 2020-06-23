@@ -432,28 +432,28 @@
 		margin: 0;
 	}
 		.social .lang .en.active {
-		    background: url("./images/lang_icons_shadow.png");
-			width: 23px;
-			height: 23px;
-			background-position: 0 0;
+			background: url("./images/lang-en-active.svg");
+			width: 24px;
+			height: 24px;
+			background-size: 24px;
 		}
 		.social .lang a.en {
-		    background: url("./images/lang_icons_shadow.png");
-			width: 23px;
-			height: 23px;
-			background-position: -25px 0;
+			background: url("./images/lang-en-default.svg");
+			width: 24px;
+			height: 24px;
+			background-size: 24px;
 		}
 		.social .lang .ru.active {
-		    background: url("./images/lang_icons_shadow.png");
-		    width: 23px;
-		    height: 23px;
-		    background-position: 0 23px;
+			background: url("./images/lang-ru-active.svg");
+			width: 24px;
+			height: 24px;
+			background-size: 24px;
 		}
 		.social .lang a.ru {
-		    background: url("./images/lang_icons_shadow.png");
-		    width: 23px;
-		    height: 23px;
-		    background-position: -25px 23px;
+		    background: url("./images/lang-ru-default.svg");
+		    width: 24px;
+		    height: 24px;
+		    background-size: 24px;
 		}
 
 
